@@ -1,0 +1,5 @@
+.idea
+target
+ressource
+src/main/resources/*
+src/test/resources/*
