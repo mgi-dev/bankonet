@@ -25,6 +25,7 @@ public class CompteCourantService {
     }
 
     public CompteCourant add(CompteCourant compteCourant) throws YourTooPoorException {
+        System.out.println("coucou");
         return new CompteCourant(compteCourantRepository.save(new com.awesomedev.bankonet.models.CompteCourant(compteCourant)));
     }
 }
