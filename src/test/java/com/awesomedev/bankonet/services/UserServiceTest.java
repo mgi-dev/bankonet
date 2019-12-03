@@ -10,13 +10,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.transaction.Transactional;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class UserServiceTest {
+
     @Autowired
     UserService userService;
 
     @Test
+    @Transactional
     public void testIndex() {
         Iterable<Client> clientsList = userService.findAll();
         Assert.assertNotNull(clientsList);

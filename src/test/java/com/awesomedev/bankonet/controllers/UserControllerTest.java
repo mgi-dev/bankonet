@@ -28,7 +28,6 @@ public class UserControllerTest {
     @Autowired
     private MockMvc mvc;
 
-
     @Test
     public void testIndex() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/users").accept(MediaType.APPLICATION_JSON))
