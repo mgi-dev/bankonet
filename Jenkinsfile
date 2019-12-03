@@ -1,5 +1,5 @@
 pipeline {
-    agent maven-3.6.3
+    agent maven
 
     stages {
         stage('Build') {
