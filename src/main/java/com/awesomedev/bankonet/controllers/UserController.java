@@ -20,7 +20,7 @@ public class UserController extends BaseController{
     @GetMapping("/users")
     @ResponseStatus(HttpStatus.OK)
     public @ResponseBody Iterable<Client> index() {
-        System.out.println("coucou");
+        System.out.println("couu");
         return userService.findAll();
     }
 
