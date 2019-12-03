@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'maven-3.6.3' }
 
     stages {
         stage('Build') {
